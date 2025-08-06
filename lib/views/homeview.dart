@@ -6,6 +6,14 @@ class Homeview extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(body: const HomeViewBody());
+    return Scaffold(
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.greenAccent,
+        shape: CircleBorder(),
+        onPressed: () {},
+        child: const Icon(Icons.add, color: Colors.black),
+      ),
+      body: const HomeViewBody(),
+    );
   }
 }
